@@ -46,7 +46,7 @@
 </script>
 
 <svelte:head>
-	<title>Antigravity Flappy</title>
+	<title>Antigravity Flappy Bird v2 🐦</title>
 </svelte:head>
 
 <!-- Decorative Background Birds -->
@@ -89,7 +89,7 @@
 		<p class="text-gray-300 text-xs font-bold uppercase tracking-[0.15em] mb-1">Welcome back,</p>
 		<p class="text-2xl font-black text-purple-300 drop-shadow-sm">{$profile.name}</p>
 		<div class="mt-4 pt-4 border-t border-white/10">
-			<p class="text-sm font-semibold text-gray-400">BEST SCORE: <span class="text-white text-xl font-black ml-2">{$profile.bestScore}</span></p>
+			<p class="text-sm font-semibold text-gray-400">BEST SCORE: <span class="score-glow text-white text-xl font-black ml-2">{$profile.bestScore}</span></p>
 		</div>
 	</div>
 
@@ -125,5 +125,13 @@
 	}
 	.floating-bird {
 		animation: float 4s ease-in-out infinite;
+	}
+
+	@keyframes glow-pulse {
+		0%, 100% { text-shadow: 0 0 8px rgba(192, 132, 252, 0.8); }
+		50% { text-shadow: 0 0 20px rgba(236, 72, 153, 1), 0 0 40px rgba(192, 132, 252, 0.6); }
+	}
+	.score-glow {
+		animation: glow-pulse 2s ease-in-out infinite;
 	}
 </style>
