@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #8b5cf6;
+  --color-secondary: #f43f5e;
+  --color-bg-dark: #1e1b4b;
+  --color-bg-light: #312e81;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', system-ui, sans-serif;
+  background-color: var(--color-bg-dark);
+  color: white;
+  overflow: hidden; /* Prevent scrolling in game */
+}
