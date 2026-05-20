@@ -1,6 +1,8 @@
-# sv
+# Antigravity Flappy Bird 🐦🎮
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Play the live game here: **[https://ElenaRandjelovic.github.io/flappybird/](https://ElenaRandjelovic.github.io/flappybird/)**
+
+Everything you need to build this Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
 ## Creating a project
 
