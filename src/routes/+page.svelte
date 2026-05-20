@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { profile } from '$lib/store';
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 
 	let birds = $state<{
 		id: number,
@@ -93,7 +94,7 @@
 	</div>
 
 	<a 
-		href="/game" 
+		href="{base}/game" 
 		class="group relative inline-flex items-center justify-center px-10 py-5 font-black text-white transition-all duration-300 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl hover:from-purple-500 hover:to-pink-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(236,72,153,0.6)] focus:outline-none focus:ring-4 focus:ring-pink-500/50 w-full text-xl"
 	>
 		START GAME
